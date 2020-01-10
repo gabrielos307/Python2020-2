@@ -8,7 +8,8 @@ def soy_otra_funcion(valor):
 	print('Soy otra funcion')
 	print('El valor que recibi es: ',valor)
 
-print(soy_otra_funcion(4))
+#print(soy_otra_funcion(4))
+soy_otra_funcion(4)
 
 def funcion_regresa(valor):
 	print('Soy la funcion que regresa')

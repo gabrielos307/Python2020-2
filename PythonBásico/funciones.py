@@ -13,14 +13,14 @@ print('Soy otra vez el main')
 '''
 #Validar de que entra a una funcion
 valida = False
-
-
-funcion(valida)
-print(valida)
 def funcion(valida):
 	valida = True
 	print(valida)
 	return valida
+
+funcion(valida)
+print(valida)
+
 if(valida == False):
 	print('No entro la funcion')
 else:

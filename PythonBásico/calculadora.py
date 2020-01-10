@@ -6,8 +6,10 @@ pida que operacion queremos hacer y pida nos numeros
 y nos muestre el resultado
 """
 def pedirNumero():
-	a = int(input('Dame un numero: '))
-	return a
+	for i in range(0,2):
+		a = int(input('Dame un numero: '))
+		yield a
+	
 def suma(x,y):
 	resultado = x + y
 	return resultado
@@ -40,8 +42,8 @@ while True:
 	print('7- Salir')
 	opcion = int(input('Elige una opcion: '))
 	if(opcion == 1):
-		a = pedirNumero()
-		b = pedirNumero()
+		a = next(pedirNumero())
+		b = next(pedirNumero())
 		resultado = suma(a,b)
 		print('El resultado es: ',resultado)
 	elif(opcion == 2):
